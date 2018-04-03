@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg height="32px" width="32px" viewBox="-4 -4 24 24" preserveAspectRatio="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="new-message-request-denied" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-20.000000, -72.000000)">
+        <g id="ic_arrow_back" transform="translate(16.000000, 68.000000)">
+            <polygon id="Bounds" fill-opacity="0" fill="#FF0000" points="0 0 24 0 24 24 0 24"></polygon>
+            <polygon id="Shape" fill-opacity="1" fill="#FA1D8C" points="20 11 7.83 11 13.42 5.41 12 4 4 12 12 20 13.41 18.59 7.83 13 20 13"></polygon>
+        </g>
+    </g>
+</svg>

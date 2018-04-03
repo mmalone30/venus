@@ -1,0 +1,201 @@
+//********************************************
+// Type
+//********************************************
+
+@font-face {
+  font-family: 'HKGroteskRegular';
+  src: url('../fonts/HKGrotesk-Regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/HKGrotesk-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/HKGrotesk-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/HKGrotesk-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/HKGrotesk-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'HKGroteskItalic';
+  src: url('../fonts/HKGrotesk-Italic.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/HKGrotesk-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/HKGrotesk-Italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/HKGrotesk-Italic.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/HKGrotesk-Italic.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'HKGroteskBold';
+  src: url('../fonts/HKGrotesk-Bold.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/HKGrotesk-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/HKGrotesk-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/HKGrotesk-Bold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/HKGrotesk-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'HKGroteskLight';
+  src: url('../fonts/HKGrotesk-Light.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/HKGrotesk-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/HKGrotesk-Light.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/HKGrotesk-Light.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/HKGrotesk-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'HKGroteskLightItalic';
+  src: url('../fonts/HKGrotesk-LightItalic.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/HKGrotesk-LightItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/HKGrotesk-LightItalic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/HKGrotesk-LightItalic.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/HKGrotesk-LightItalic.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'HKGroteskMedium';
+  src: url('../fonts/HKGrotesk-Medium.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/HKGrotesk-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/HKGrotesk-Medium.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/HKGrotesk-Medium.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/HKGrotesk-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'HKGroteskMediumItalic';
+  src: url('../fonts/HKGrotesk-MediumItalic.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/HKGrotesk-MediumItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/HKGrotesk-MediumItalic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/HKGrotesk-MediumItalic.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/HKGrotesk-MediumItalic.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'HKGroteskSemiBold';
+  src: url('../fonts/HKGrotesk-SemiBold.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/HKGrotesk-SemiBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/HKGrotesk-SemiBold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/HKGrotesk-SemiBold.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/HKGrotesk-SemiBold.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: 'HKGroteskSemiBoldItalic';
+  src: url('../fonts/HKGrotesk-SemiBoldItalic.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/HKGrotesk-SemiBoldItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/HKGrotesk-SemiBoldItalic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/HKGrotesk-SemiBoldItalic.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/HKGrotesk-SemiBoldItalic.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+$sanSerif: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
+  "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
+  "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
+  "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+
+$serif: "rift", $sanSerif;
+
+$logoFont: "rift", $sanSerif;
+
+$mainFont: $sanSerif;
+
+$headingFont: $serif;
+
+$baseGrid: 8px;
+
+$baseFontSize: 20px;
+
+$lineHeight: 32px;
+
+p, span, em, a, strong, li {
+  font-size:$baseFontSize;
+  line-height: $lineHeight;
+}
+
+a {
+  text-decoration: none;
+  color:$primaryColor;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $headingFont;
+  font-weight: 600;
+
+  color: $headingColor;
+  line-height: 1;
+}
+
+
+
+h2 + h3 {
+  font-family: $mainFont;
+  font-weight: 300;
+  font-size:ceil($baseFontSize*1.4);
+  color:$textColor;
+  line-height: $baseGrid * 5;
+  margin-top:$baseGrid*5;
+  padding-bottom:$baseGrid*5;
+  position: relative;
+  &:before {
+    content:" ";
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: $baseGrid*8;
+    height: 3px;
+    background:$darkGray;
+  }
+
+}
+
+h1 {
+  font-size:$baseFontSize*4;
+}
+
+h2 {
+  font-size:$baseGrid*9;
+  line-height: $baseGrid*11;
+  font-weight: bold;
+}
+
+h3 {
+
+  font-size:$baseFontSize*1.5;
+}
+
+h4 {
+
+  font-weight: 400;
+}
+
+h4 + a {
+  margin-top:$baseGrid;
+  display: inline-block;
+}
+
+a + h4 {
+  margin-top:$baseGrid*4;
+
+}
+
+p + p {
+  margin-top:$baseGrid*3;
+}
+
+h3 + p {
+  margin-top:$baseGrid*2;
+}
+
+ol, ul {
+  margin-left:22px;
+}
+
+ol + p, p + ol {
+  margin-top:$baseGrid*4
+}
+
+li + li {
+  margin-top:$baseGrid;
+}
+
+.lead {
+  font-family: $mainFont;
+  font-size:$baseGrid*4;
+  font-weight: 300;
+  line-height: $baseGrid*6;
+}

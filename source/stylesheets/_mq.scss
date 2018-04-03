@@ -1,0 +1,108 @@
+//********************************************
+// Media Queries
+//********************************************
+
+@media only screen and (max-width: 900px) {
+  header.home {
+    flex-direction: column;
+    padding:$baseGrid*10 0;
+
+  }
+  header {
+    padding:$baseGrid*3;
+  }
+  .pageTitle {
+    padding:$baseGrid*2 0 $baseGrid*5 0;
+    h2 {
+      font-size:$baseGrid*7;
+      line-height: $baseGrid*8;
+    }
+    h2 + h3 {
+      font-size:$baseFontSize;
+      line-height: $lineHeight;
+      margin-top:$baseGrid*2;
+      padding-bottom: $baseGrid*4;
+    }
+  }
+  .work {
+    grid-template-columns: 1fr 1fr;
+  }
+  .about {
+    grid-column-gap: $baseGrid*10;
+  }
+}
+
+
+@media only screen and (max-width: 620px) {
+  header.home {
+    flex-direction: column;
+    padding:$baseGrid*10 0;
+
+  }
+  header {
+    padding:$baseGrid*2 $baseGrid*3;
+    transition:all ease-in-out 200ms;
+    a {
+      img {
+        height: 24px;
+      }
+    }
+  }
+  .pageTitle {
+    padding:$baseGrid*12 0 $baseGrid*5 0;
+    h2 {
+      font-size:$baseGrid*5;
+      line-height: $baseGrid*6;
+    }
+    h2 + h3 {
+      font-size:$baseGrid*2;
+      line-height: $baseGrid*3;
+      margin-top:$baseGrid*2;
+      padding-bottom: $baseGrid*4;
+    }
+  }
+  .pageContent {
+    .text {
+      grid-template-columns: 1fr;
+      grid-column-end: 13;
+    }
+    figure, figure.two {
+      grid-template-columns: 1fr;
+      .image {
+        margin-bottom:$baseGrid*2;
+      }
+    }
+  }
+  .pageContent + .pageContent {
+    margin-top:$baseGrid*5;
+  }
+  .work {
+    grid-template-columns: 1fr;
+  }
+  .about {
+    grid-template-columns: 1fr;
+    .links {
+      margin-top:$baseGrid*5;
+    }
+  }
+  .lead {
+    font-size:$baseFontSize;
+    line-height: $lineHeight;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  header.home {
+    padding:$baseGrid*7 0 ;
+  }
+  .mainContent {
+    padding:$baseGrid*3 0;
+  }
+  p, span, em, a, strong, li {
+    font-size:15px;
+    line-height: $baseGrid*3;
+  }
+  p + p {
+    margin-top:$baseGrid*2;
+  }
+}
