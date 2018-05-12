@@ -216,7 +216,7 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: $baseGrid*2;
-  
+
 }
 
 .pageHero {
@@ -227,7 +227,7 @@ header {
   display:grid;
   grid-template-columns: 1fr $baseGrid*40;
   grid-template-areas: "content sidebar";
-  grid-column-gap: $baseGrid*4;
+  grid-column-gap: $baseGrid*7;
   .text {
     grid-area: content;
   }
