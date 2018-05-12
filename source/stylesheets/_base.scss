@@ -19,6 +19,10 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+img {
+  max-width: 100%;
+}
+
 .container {
   max-width:1360px;
   margin:0 auto;
@@ -208,35 +212,31 @@ header {
   padding:$baseGrid * 20 0 $baseGrid * 10 0;
 }
 
-
+.pageHero {
+  margin-bottom: $baseGrid*10;
+}
 
 .pageContent {
   display:grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-column-gap: $baseGrid*2;
+  grid-template-columns: 1fr $baseGrid*34;
+  grid-template-areas: "content sidebar";
+  grid-column-gap: $baseGrid*3;
   .text {
-    grid-column-start: 1;
-    grid-column-end: span 9;
+    grid-area: content;
   }
   figure {
-    grid-column-start: 1;
-    grid-column-end: span 12;
-    display:grid;
-    grid-template-columns: 1fr $baseGrid*34;
-    grid-column-gap: $baseGrid*3;
-    &.two {
-      grid-template-columns: 1fr 1fr $baseGrid*34;
-    }
+    grid-area: content;
     .image {
       height: 50vh;
       background:$darkerGray;
     }
-    figcaption {
-      font-family: "HKGroteskItalic", $sanSerif;
-      font-size:ceil($baseFontSize*0.8);
-      line-height: $baseGrid*3;
+  }
+  figcaption {
+    grid-area: sidebar;
+    font-family: $sanSerif;
+    font-size:ceil($baseFontSize*0.8);
+    line-height: $baseGrid*3;
 
-    }
   }
 }
 
