@@ -131,15 +131,7 @@ h2 + h3 {
   margin-top:$baseGrid*5;
   padding-bottom:$baseGrid*5;
   position: relative;
-  &:before {
-    content:" ";
-    position: absolute;
-    bottom: 0;
-    display: block;
-    width: $baseGrid*8;
-    height: 3px;
-    background:$darkGray;
-  }
+
 
 }
 
@@ -159,8 +151,10 @@ h3 {
 }
 
 h4 {
-
   font-weight: 400;
+  line-height: $lineHeight;
+  letter-spacing: 1px;
+  color:$mutedColor;
 }
 
 h4 + a {

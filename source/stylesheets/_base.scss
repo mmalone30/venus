@@ -212,15 +212,21 @@ header {
   padding:$baseGrid * 20 0 $baseGrid * 10 0;
 }
 
+.info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 16px;
+}
+
 .pageHero {
   margin-bottom: $baseGrid*10;
 }
 
 .pageContent {
   display:grid;
-  grid-template-columns: 1fr $baseGrid*34;
+  grid-template-columns: 1fr $baseGrid*40;
   grid-template-areas: "content sidebar";
-  grid-column-gap: $baseGrid*3;
+  grid-column-gap: $baseGrid*4;
   .text {
     grid-area: content;
   }
@@ -236,6 +242,7 @@ header {
     font-family: $sanSerif;
     font-size:ceil($baseFontSize*0.8);
     line-height: $baseGrid*3;
+    color: $mutedColor;
 
   }
 }

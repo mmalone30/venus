@@ -12,7 +12,7 @@
     padding:$baseGrid*3;
   }
   .pageTitle {
-    padding:$baseGrid*2 0 $baseGrid*5 0;
+    padding:$baseGrid*12 0 $baseGrid*5 0;
     h2 {
       font-size:$baseGrid*7;
       line-height: $baseGrid*8;
@@ -48,6 +48,10 @@
       }
     }
   }
+  .info {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: $baseFontSize;
+  }
   .pageTitle {
     padding:$baseGrid*12 0 $baseGrid*5 0;
     h2 {
@@ -62,9 +66,10 @@
     }
   }
   .pageContent {
+    grid-template-columns: 1fr;
+    grid-column-gap: 0;
     .text {
-      grid-template-columns: 1fr;
-      grid-column-end: 13;
+
     }
     figure, figure.two {
       grid-template-columns: 1fr;
@@ -97,6 +102,9 @@
   }
   .mainContent {
     padding:$baseGrid*3 0;
+  }
+  .pageContent figcaption {
+    font-size:15px;
   }
   p, span, em, a, strong, li {
     font-size:15px;
