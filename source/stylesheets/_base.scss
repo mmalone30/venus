@@ -21,15 +21,21 @@ body {
 
 img {
   max-width: 100%;
+  &.hasShadow {
+    border-radius:3px;
+    box-shadow: 0 $baseGrid*3 $baseGrid*6 rgba(0,0,0,0.085);
+  }
 }
 
 .container {
-  max-width:1360px;
+  max-width:100%;
   margin:0 auto;
-  padding:0 $baseGrid*3;
+  padding:0 $baseGrid*5;
 }
 
 header {
+  display: flex;
+  align-items: center;
   padding:$baseGrid*3;
   position:fixed;
   top:0;
@@ -48,10 +54,28 @@ header {
     color: $primaryColor;
     font-size:ceil($baseFontSize*1.555);
   }
+  h3 {
+    font-size:$baseGrid*3;
+    line-height: $lineHeight;
+    flex:1;
+    text-align: center;
+    padding-right: $baseGrid*4;
+    opacity: 0;
+    transition: all ease-in-out 200ms;
+    &.show {
+      opacity: 1;
+    }
+  }
   &.home {
-    display:flex;
+    display:grid;
+    grid-template-columns: minmax(0, $baseGrid*170);
+    grid-auto-flow: column;
+    justify-content: center;
     position:relative;
     padding:30vh 0 $baseGrid*15 0;
+    .logo {
+      display: flex;
+    }
     h1 {
       margin-right: $baseGrid*2;
       font-size:$baseGrid*5;
@@ -85,6 +109,9 @@ header {
 
 .mainContent {
   padding:$baseGrid * 5 0;
+  display:grid;
+  grid-template-columns: fit-content($baseGrid*170);
+  justify-content: center;
 }
 
 .work {
@@ -209,7 +236,24 @@ header {
 }
 
 .pageTitle {
+  display: grid;
+  grid-template-columns: $baseGrid*144;
+  grid-template-rows: minmax(0, max-content);
+  grid-template-areas: "title" "subtitle" "info";
+  grid-row-gap: $baseGrid*3;
+  justify-content: center;
   padding:$baseGrid * 20 0 $baseGrid * 10 0;
+  h2 {
+    grid-area: title;
+  }
+  h3 {
+    grid-area: subtitle;
+    margin:0;
+    padding:0;
+  }
+  .info {
+    grid-area: info;
+  }
 }
 
 .info {
@@ -221,6 +265,9 @@ header {
 
 .pageHero {
   margin-bottom: $baseGrid*10;
+  display: flex;
+  justify-content: center;
+  align-items: start;
 }
 
 .pageContent {
@@ -228,6 +275,11 @@ header {
   grid-template-columns: 1fr $baseGrid*40;
   grid-template-areas: "content sidebar";
   grid-column-gap: $baseGrid*7;
+  &.pageText {
+    grid-template-columns: 1fr $baseGrid*110 1fr;
+    grid-template-areas: ". content .";
+    grid-column-gap: 0;
+  }
   .text {
     grid-area: content;
   }
@@ -244,7 +296,7 @@ header {
     font-size:ceil($baseFontSize*0.8);
     line-height: $baseGrid*3;
     color: $mutedColor;
-
+    font-weight: 300;
   }
 }
 

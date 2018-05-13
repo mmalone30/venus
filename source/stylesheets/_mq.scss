@@ -2,6 +2,12 @@
 // Media Queries
 //********************************************
 
+@media only screen and (max-width: 1240px) {
+  .pageTitle {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media only screen and (max-width: 900px) {
   header.home {
     flex-direction: column;
@@ -20,8 +26,7 @@
     h2 + h3 {
       font-size:$baseFontSize;
       line-height: $lineHeight;
-      margin-top:$baseGrid*2;
-      padding-bottom: $baseGrid*4;
+
     }
   }
   .work {
@@ -30,10 +35,22 @@
   .about {
     grid-column-gap: $baseGrid*10;
   }
+  .pageContent.pageText {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  header.home {
+    grid-auto-flow: row;
+  }
 }
 
 
 @media only screen and (max-width: 620px) {
+  .container {
+    padding: 0 $baseGrid*3;
+  }
   header.home {
     flex-direction: column;
     padding:$baseGrid*10 0;
@@ -46,6 +63,13 @@
       img {
         height: 24px;
       }
+    }
+    h3 {
+      font-size:$baseFontSize;
+      line-height: $baseGrid*3;
+      padding-right: 0;
+      padding-left:$baseGrid*2;
+      text-align: left;
     }
   }
   .info {
@@ -61,8 +85,7 @@
     h2 + h3 {
       font-size:$baseGrid*2;
       line-height: $baseGrid*3;
-      margin-top:$baseGrid*2;
-      padding-bottom: $baseGrid*4;
+
     }
   }
   .pageContent {

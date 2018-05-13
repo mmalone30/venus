@@ -12,6 +12,21 @@
 }
 
 @font-face {
+  font-family: 'UntitledRegular';
+  src: url('../fonts/UntitledSansTest-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+}
+
+@font-face {
+  font-family: 'UntitledLight';
+  src: url('../fonts/UntitledSansTest-Light.woff') format('woff'), /* Pretty Modern Browsers */
+}
+
+@font-face {
+  font-family: 'UntitledMedium';
+  src: url('../fonts/UntitledSansTest-Medium.woff') format('woff'), /* Pretty Modern Browsers */
+}
+
+@font-face {
   font-family: 'HKGroteskItalic';
   src: url('../fonts/HKGrotesk-Italic.eot'); /* IE9 Compat Modes */
   src: url('../fonts/HKGrotesk-Italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
@@ -95,6 +110,12 @@ $logoFont: "rift", $sanSerif;
 $mainFont: $sanSerif;
 
 $headingFont: $serif;
+
+$untitledRegular: "UntitledRegular";
+
+$untitledMedium: "UntitledMedium";
+
+$untitledLight: "UntitledLight";
 
 $baseGrid: 8px;
 
