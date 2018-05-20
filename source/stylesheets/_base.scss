@@ -19,7 +19,7 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-img {
+img, video {
   max-width: 100%;
   &.hasShadow {
     border-radius:3px;
@@ -257,6 +257,11 @@ header {
   }
   .info {
     grid-area: info;
+    .point {
+      h4 + a {
+        margin-top:0;
+      }
+    }
   }
 }
 
@@ -276,9 +281,9 @@ header {
 
 .pageContent {
   display:grid;
-  grid-template-columns: 1fr $baseGrid*40;
+  grid-template-columns: 1fr $baseGrid*35;
   grid-template-areas: "content sidebar";
-  grid-column-gap: $baseGrid*7;
+  grid-column-gap: $baseGrid*5;
   &.pageText {
     grid-template-columns: 1fr $baseGrid*110 1fr;
     grid-template-areas: ". content .";
@@ -324,4 +329,37 @@ header {
 
 .pageContent + .pageContent {
   margin-top:$baseGrid*10;
+}
+
+.border {
+  position:relative;
+  z-index: 2;
+  * {
+    position: relative;
+    z-index: 2;
+    vertical-align: center;
+    background: white;
+  }
+  &:after {
+    content:"";
+    position:absolute;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    background:$lightGray;
+    transform:translate(0.25rem, 0.25rem);
+    z-index: 1;
+  }
+  &:before {
+    content:"";
+    position:absolute;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    border: 1px $primaryColor solid;
+    transform:translate(-0.25rem, -0.25rem);
+    z-index: 3;
+  }
 }

@@ -22,6 +22,9 @@
   }
   header {
     padding:$baseGrid*3;
+    &.home .logo {
+      flex-direction: column;
+    }
   }
   .pageTitle {
     padding:$baseGrid*12 0 $baseGrid*5 0;
@@ -87,13 +90,14 @@
   }
   .pageTitle {
     padding:$baseGrid*12 0 $baseGrid*5 0;
+    grid-row-gap: $baseGrid*2;
     h2 {
       font-size:$baseGrid*5;
       line-height: $baseGrid*6;
     }
     h2 + h3 {
-      font-size:$baseGrid*2;
-      line-height: $baseGrid*3;
+      font-size:$baseFontSize;
+      line-height: $lineHeight;
 
     }
   }
@@ -108,7 +112,7 @@
     figure, figure.two {
       grid-template-columns: 1fr;
       .image {
-        margin-bottom:$baseGrid*2;
+
       }
     }
   }
