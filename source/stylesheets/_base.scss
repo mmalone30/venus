@@ -23,7 +23,7 @@ img {
   max-width: 100%;
   &.hasShadow {
     border-radius:3px;
-    box-shadow: 0 0 $baseGrid*8 rgba(0,0,0,0.085), 0 $baseGrid*6 $baseGrid*8 rgba(0,0,0,0.085);
+    box-shadow: 0 0 $baseGrid*8 rgba(0,0,0,0.07), 0 $baseGrid*6 $baseGrid*8 rgba(0,0,0,0.07);
   }
 }
 
@@ -299,6 +299,13 @@ header {
       grid-column-gap: $baseGrid*3;
       grid-auto-flow: column;
     }
+    &.four {
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-gap: $baseGrid*3;
+      grid-auto-flow: column;
+    }
   }
   figcaption {
     grid-area: sidebar;
@@ -306,6 +313,11 @@ header {
     font-size:ceil($baseFontSize*0.8);
     line-height: $baseGrid*3;
     font-weight: 300;
+    a {
+      font-size:ceil($baseFontSize*0.8);
+      line-height: $baseGrid*3;
+      font-weight: 300;
+    }
   }
 
 }
