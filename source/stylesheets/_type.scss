@@ -178,6 +178,18 @@ h4 {
   color:$mutedColor;
 }
 
+ol + h4 {
+  margin-top:$baseGrid*6;
+}
+
+p + h4 {
+  margin-top:$baseGrid*6;
+}
+
+h4 + ol, p {
+  margin-top:$baseGrid;
+}
+
 h4 + a {
   margin-top:$baseGrid;
   display: inline-block;
