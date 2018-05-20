@@ -23,7 +23,7 @@ img {
   max-width: 100%;
   &.hasShadow {
     border-radius:3px;
-    box-shadow: 0 $baseGrid*3 $baseGrid*6 rgba(0,0,0,0.085);
+    box-shadow: 0 0 $baseGrid*8 rgba(0,0,0,0.085), 0 $baseGrid*6 $baseGrid*8 rgba(0,0,0,0.085);
   }
 }
 
@@ -289,6 +289,12 @@ header {
       height: 50vh;
       background:$darkerGray;
     }
+    &.two {
+      display:grid;
+      grid-auto-columns: 1fr 1fr;
+      grid-column-gap: $baseGrid*3;
+      grid-auto-flow: column;
+    }
   }
   figcaption {
     grid-area: sidebar;
@@ -298,6 +304,7 @@ header {
     color: $mutedColor;
     font-weight: 300;
   }
+
 }
 
 .pageContent + .pageContent {

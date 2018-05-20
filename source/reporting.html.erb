@@ -38,7 +38,10 @@ title: Sharethrough Reporting Framework
     </div>
   </div>
 </section>
-<div class="pageContent">
+<div class="pageHero">
+  <img class="hasShadow" src="../images/sharethrough.png" />
+</div>
+<div class="pageContent pageText">
   <div class="text">
     <h3>Problem</h3>
     <p class="lead">
@@ -67,7 +70,7 @@ title: Sharethrough Reporting Framework
     This model tries to visually explain the problem. When a user enters the platform, it's not clear there are problems or opportunities awaiting (the purple bubbles). How can we bring those things to the product surface?
   </figcaption>
 </div>
-<div class="pageContent">
+<div class="pageContent pageText">
   <div class="text">
     <h3>The Solution</h3>
     <p>
@@ -103,7 +106,7 @@ title: Sharethrough Reporting Framework
     This is the concept model we based our first experiment on. In this model, the problems and opportunities are "sensed" by the platform and brought forward to the product surface to a place called the Alert Index. These alerts also trigger an email which also brings the user to the Alert Index. The first experiment didn't have all of these features but it gave us something to work off of.
   </figcaption>
 </div>
-<div class="pageContent">
+<div class="pageContent pageText">
   <div class="text">
     <p>
       I began the project by working with product managers, engineers, and the solutions team to think through how the system should work. The solutions team—which works directly with publishers to troubleshoot problems—offered a lot of insight into the major problems that publishers face. With their help, we were able to come up with our first set of problems and opportunities to alert publishers. From these conversations, we also thought about the different kinds of alerts—scheduled and on-demand.
@@ -135,7 +138,7 @@ title: Sharethrough Reporting Framework
     This is the user flow for an On-demand alert. These alerts run when an Alert Object is created. An alert object might be a new floor price recommendation or a new demand partner coming online. When that happens, we want our publishers to know about so they can interact with those things.
   </figcaption>
 </div>
-<div class="pageContent">
+<div class="pageContent pageText">
   <div class="text">
     <p>
       With a strong understanding of what we wanted to accomplish and how the system would work, I started designing interfaces and prototyping ideas.
@@ -221,7 +224,7 @@ title: Sharethrough Reporting Framework
     The Alert icon in the main navigation will show a purple indicator if you have alerts awaiting your inspection.
   </figcaption>
 </div>
-<div class="pageContent">
+<div class="pageContent pageText">
   <div class="text">
     <h3>Outcome</h3>
     <p>
@@ -241,7 +244,7 @@ title: Sharethrough Reporting Framework
     This graph shows resolved Video View Rate alerts over time. In other words, publishers are receiving our alerts and taking action. The alerting system seems to be working.
   </figcaption>
 </div>
-<div class="pageContent">
+<div class="pageContent pageText">
   <div class="text">
     <p>
       We applied Mixpanel tracking to our alerting system to track alert resolutions. If the previous week generated an alert but didn't on the current week, we say that it is "resolved." We have to track it like this because you can't click a button in our platform to fix everything. Sometimes it requires you to go into our codebase and move stuff around. It's hard but publishers seem to be motivated. This alerting system gives them visibility into what's wrong and we show them how to fix it.

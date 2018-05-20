@@ -6,6 +6,12 @@
   .pageTitle {
     grid-template-columns: 1fr;
   }
+  .pageContent figure.two {
+    grid-auto-columns: 1fr;
+    grid-column-gap: 0;
+    grid-row-gap: $baseGrid*3;
+    grid-auto-flow: row;
+  }
 }
 
 @media only screen and (max-width: 900px) {
