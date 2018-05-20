@@ -36,7 +36,7 @@ img {
 header {
   display: flex;
   align-items: center;
-  padding:$baseGrid*3;
+  padding:$baseGrid*2;
   position:fixed;
   top:0;
   left:0;
@@ -91,6 +91,10 @@ header {
   }
   &.article.scrolling {
     box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    background:$darkerGray;
+    h3 {
+      color:white;
+    }
   }
 }
 
@@ -301,7 +305,6 @@ header {
     font-family: $sanSerif;
     font-size:ceil($baseFontSize*0.8);
     line-height: $baseGrid*3;
-    color: $mutedColor;
     font-weight: 300;
   }
 

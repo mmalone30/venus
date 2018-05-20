@@ -50,6 +50,9 @@
   header.home {
     grid-auto-flow: row;
   }
+  img.hasShadow {
+    box-shadow: 0 0 $baseGrid*2 rgba(0,0,0,0.085), 0 $baseGrid*2 $baseGrid*3 rgba(0,0,0,0.085);
+  }
 }
 
 
@@ -97,6 +100,8 @@
   .pageContent {
     grid-template-columns: 1fr;
     grid-column-gap: 0;
+    grid-row-gap: $baseGrid*3;
+    grid-template-areas: "content" "sidebar";
     .text {
 
     }
