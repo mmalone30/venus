@@ -84,3 +84,108 @@ title: Kareo Patient Portal
     </p>
   </div>
 </div>
+<div class="pageContent pageText">
+  <div class="text">
+    <h3>Discovery</h3>
+    <p>
+      We learned from interviews with patients and healthcare professionals that many patients don't care about statement details; they just want to know what they owe and how to pay it.
+    </p>
+    <p>
+      This was difficult for us to believe. How could patients not care about what they're paying for? We listened to the feedback and designed a payment solution that payment solution (using Stripe) that connected to the Patient Portal. But we also let patients make payments without logging in, authenticating, and viewing their statements. All they could see if what they owed and to whom. More on this later.
+    </p>
+  </div>
+</div>
+<div class="pageContent">
+  <figure>
+    <img src="../images/early-portal-notes.jpg" />
+  </figure>
+  <figcaption>
+    Some early thinking about patient portals. I usually start by asking questions about needs, behaviors, and relationships.
+  </figcaption>
+</div>
+<div class="pageContent pageText">
+  <div class="text">
+    <h3>Solution</h3>
+    <p>
+      Kareo Patient Portal's feature set is determined by the type of Kareo customer. Certain functionality won't work if the customer doesn't have certain products enabled. For example, patient's can't make payments if the practice doesn't have Kareo Practice Management. We want to change this so practices can collect the money and work with an in-house biller or outsourced biller to adjudicate the amount. The value in signing up for the full Kareo suite is a lot of that work is done automatically. Below you can see the basic structure of how patients can interact with their practices with three typical scenarios.
+    </p>
+  </div>
+</div>
+<div class="pageContent">
+  <figure>
+    <img src="../images/portal-structure2.png" />
+  </figure>
+  <figcaption>
+    Basic functionality for how patient portal connects to doctors, billers, front desk staff, and patients.
+  </figcaption>
+</div>
+<div class="pageContent pageText">
+  <div class="text">
+    <p>
+      Since we learned that patient's mostly just want to make a payment, we made the payment process very simple. We designed the Patient Portal so a person can make a payment without logging in. Without authentication, patients can't view medical records or secure messages. But that's ok—the task is just to make a payment.
+    </p>
+  </div>
+</div>
+<div class="pageContent">
+  <figure>
+    <img src="../images/patient-portal-flow.png" />
+  </figure>
+  <figcaption>
+    Workflow for how a patient initially signs up for the Patient Portal. Notice how you can make a payment without actually logging in.
+  </figcaption>
+</div>
+<div class="pageContent">
+  <figure>
+    <img class="hasShadow" src="../images/medical-record.png" />
+  </figure>
+  <figcaption>
+    The complete medical record was designed for clarity.
+  </figcaption>
+</div>
+<div class="pageContent">
+  <figure>
+    <img class="hasShadow" src="../images/secure-messaging.png" />
+  </figure>
+  <figcaption>
+    With Kareo Patient Portal, it's easy to send a secure message to your provider.
+  </figcaption>
+</div>
+<div class="pageContent pageText">
+  <div class="text">
+    <p>
+      The part of this project that I am most proud of is the redesigned patient statement. If you're like me, you never understand the statements that you get in the mail from your healthcare provider. There is a form called an "EOB"—an Explanation of Benefits. Many people we interviewed believed this to be the bill they owe, despite many having a large "NOT A BILL" disclaimer. But for all intents and purposes, it's a bill. So we set out to make a simpler, more understandable bill.
+    </p>
+  </div>
+</div>
+<div class="pageContent">
+  <figure>
+    <img class="hasShadow" src="../images/patient-statement.jpg" />
+  </figure>
+  <figcaption>
+    The new patient statement focused on clarity. We assumed that if the statement was clear, people would be more likely to make payments.
+  </figcaption>
+</div>
+<div class="pageContent pageText">
+  <div class="text">
+    <p>
+      The new bill is a simple itemized list that shows exactly what happened at each visit, how much insurance paid, and much was written off, and what's left over.
+    </p>
+  </div>
+</div>
+<div class="pageContent pageText">
+  <div class="text">
+    <h3>Outcome</h3>
+    <div class="outcomes">
+      <div class="panel">
+        <h2>$5M</h2>
+        gross revenue in first year of beta program
+      </div>
+      <div class="panel">
+        <h2>$100</h2>average payment per transaction
+      </div>
+      <div class="panel">
+        <h2>75%</h2>patient payment retention
+      </div>
+    </div>
+  </div>
+</div>

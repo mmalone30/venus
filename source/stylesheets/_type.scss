@@ -129,7 +129,9 @@ p, span, em, a, strong, li {
 }
 
 a {
-  text-decoration: none;
+  text-decoration-skip: ink;
+  text-decoration-skip-ink: auto;
+  text-decoration-color: #ffd1e3;
   color:$primaryColor;
 }
 

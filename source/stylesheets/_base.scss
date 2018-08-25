@@ -69,10 +69,17 @@ header {
   &.home {
     display:grid;
     grid-template-columns: minmax(0, $baseGrid*170);
-    grid-auto-flow: column;
+    grid-auto-flow: row;
+    grid-gap: $baseGrid*3;
     justify-content: center;
     position:relative;
     padding:30vh 0 $baseGrid*15 0;
+    nav {
+      display:flex;
+      a + a {
+        margin-left:$baseGrid*2;
+      }
+    }
     .logo {
       display: flex;
     }
@@ -130,7 +137,7 @@ header {
     align-items: start;
     font-family: $sanSerif;
     font-size:$baseFontSize;
-
+    text-decoration: none;
     background:$lightPink;
     transition:all ease-in-out 300ms;
     h4 {
@@ -237,9 +244,9 @@ header {
 
 .about {
   display:grid;
-  grid-template-columns: 1fr 20rem;
-  grid-column-gap: $baseGrid*20;
   margin-top:$baseGrid*3;
+  grid-template-columns: 1fr $baseGrid*60;
+
 }
 
 .pageTitle {
@@ -394,4 +401,11 @@ header {
   background:$lightPink;
   padding:$baseGrid*3;
   text-align: center;
+}
+
+.links {
+  margin-top:$baseGrid*8;
+  a + a {
+    margin-left:$baseGrid*2;
+  }
 }
