@@ -2,6 +2,13 @@
 // Media Queries
 //********************************************
 
+
+@media only screen and (min-width: 1500px) {
+  .pageContent {
+    grid-template-columns:1fr $baseGrid*125 $baseGrid*35 1fr;
+  }
+}
+
 @media only screen and (max-width: 1240px) {
   .pageTitle {
     grid-template-columns: 1fr;
@@ -11,6 +18,20 @@
     grid-column-gap: 0;
     grid-row-gap: $baseGrid*3;
     grid-auto-flow: row;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .pageContent.pageText {
+    grid-template-columns: 1fr;
+    grid-template-areas: "content";
+  }
+  .outcomes {
+    grid-template-columns: 1fr;
+  }
+  .pageContent {
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: "content sidebar";
   }
 }
 
@@ -46,6 +67,10 @@
   }
   .pageContent.pageText {
     grid-template-columns: 1fr;
+  }
+  .pageContent {
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: "content sidebar";
   }
 }
 

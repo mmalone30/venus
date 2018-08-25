@@ -90,10 +90,10 @@ header {
     }
   }
   &.article.scrolling {
-    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
-    background:$darkerGray;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+    background:white;
     h3 {
-      color:white;
+      color:$headingColor;
     }
   }
 }
