@@ -46,6 +46,11 @@ header {
   transition: all ease-in-out 200ms;
   a {
     display: flex;
+    transition: all ease-in-out 200ms;
+    &:focus {
+      background:$lightPink;
+      box-shadow: 0 0 0 3px white, 0 0 0 5px lighten($accentColor, 20%);
+    }
   }
   h1 {
     font-family: $logoFont;
@@ -143,8 +148,9 @@ header {
     h4 {
       color:$headingColor;
     }
-    &:hover {
+    &:hover, &:focus {
       cursor: pointer;
+      outline:none;
       background:white;
       box-shadow:0 16px 40px rgba(0,0,0,0.1);
       transform: translateY(-3px);
@@ -162,7 +168,9 @@ header {
       }
 
     }
-
+    &:focus {
+      box-shadow:0 16px 40px rgba(0,0,0,0.1), 0 0 0 4px white, 0 0 0 6px lighten($accentColor, 20%);
+    }
 
     .cover {
       background-size: cover;

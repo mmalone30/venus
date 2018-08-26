@@ -133,6 +133,10 @@ a {
   text-decoration-skip-ink: auto;
   text-decoration-color: #ffd1e3;
   color:$primaryColor;
+  &:focus {
+    outline:none;
+    text-decoration-color: lighten($accentColor, 20%);
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
