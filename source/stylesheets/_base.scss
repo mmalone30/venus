@@ -47,6 +47,7 @@ header {
   a {
     display: flex;
     transition: all ease-in-out 200ms;
+    border-radius: 3px;
     &:focus {
       background:$lightPink;
       box-shadow: 0 0 0 3px white, 0 0 0 5px lighten($accentColor, 20%);
@@ -145,6 +146,7 @@ header {
     text-decoration: none;
     background:$lightPink;
     transition:all ease-in-out 300ms;
+    border-radius: 3px;
     h4 {
       color:$headingColor;
     }
@@ -177,7 +179,7 @@ header {
       background-repeat: no-repeat;
       height:100%;
       position: relative;
-
+      border-radius: 3px 3px 0 0;
       &:after {
         content:"";
         position: absolute;
@@ -189,6 +191,7 @@ header {
         opacity: 0.35;
         z-index: 1;
         transition: all ease-in-out 300ms;
+        border-radius: 3px 3px 0 0;
       }
       &.vape {
         background-image: url("../images/vape.jpg");
@@ -322,11 +325,23 @@ header {
       grid-column-gap: $baseGrid*3;
       grid-auto-flow: column;
     }
+    &.three {
+      display:grid;
+      grid-auto-columns: 1fr 1fr 1fr;
+      grid-column-gap: $baseGrid*3;
+      grid-auto-flow: column;
+    }
     &.four {
       display:grid;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
       grid-gap: $baseGrid*3;
+      grid-auto-flow: column;
+    }
+    &.four-row {
+      display:grid;
+      grid-auto-columns: 1fr 1fr 1fr 1fr;
+      grid-column-gap: $baseGrid*3;
       grid-auto-flow: column;
     }
   }

@@ -128,6 +128,10 @@ p, span, em, a, strong, li {
   line-height: $lineHeight;
 }
 
+strong {
+  font-weight: 500;
+}
+
 a {
   text-decoration-skip: ink;
   text-decoration-skip-ink: auto;
@@ -210,7 +214,7 @@ p + p {
   margin-top:$baseGrid*3;
 }
 
-h3 + p {
+h3 + p, h3 + ol {
   margin-top:$baseGrid*2;
 }
 

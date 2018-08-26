@@ -57,44 +57,63 @@ title: A new onboarding and Sign up experience for iOS, Android, and Web
   </div>
 
 </div>
-<div class="pageContent pageText" style="display:none;">
+
+
+<div class="pageContent pageText">
   <div class="text">
-    <h3>Users</h3>
-    <div class="panel border">
-      <div>
-        <h4>The New Comer</h4>
-        <p>
-          The New Comer is new to the cannabis community. They might have used it in the past once or twice at parties. Now that it is legal in their state, they want to try it again but they have some fears, reservations, and overall lack of awareness.
-        </p>
-        <h5>Goals</h5>
-        <ol>
-          <li>
-            Find legal cannabis locations and menus
-          </li>
-          <li>
+    <h3>Goals</h3>
+    <ol>
+      <li>
+        <strong>Make Weedmaps more understandable.</strong> Does a lot of things. It’s hard to get a sense of how Weedmaps can help you in your cannabis journey. When we asked how we might make Weedmaps easier to understand, we thought a clear onboarding experience would help.
+      </li>
+      <li>
+        <strong>Make it really easy to create an account.</strong> Confirmed, logged-in users are very important to Weedmaps, particularly it’s ad business. We wanted to make it really easy for users to sign up to take advantage of all the great features we have to offer.
+      </li>
+    </ol>
 
-          </li>
-        </ol>
-      </div>
-    </div>
   </div>
-</div>
-<div class="pageContent">
-  <figure>
-    <div class="image">
-
-    </div>
-  </figure>
-  <figcaption>
-    This sketch demonstrates the poor first-time user experience with Weedmaps on iOS and Android. Device prompts for location, notifications, and sign up come out of nowhere and offer little reason for such requests.
-  </figcaption>
 </div>
 <div class="pageContent pageText">
   <div class="text">
-    <h3>The Solution</h3>
+    <h3>Solution</h3>
     <p>
-      The design team worked with product managers, marketing, and our technical writers to develop the copy for the onboarding. Our assumption was that the words we used to describe the product and request the device features was the most important component.
+      We needed users to understand why we need location and notification services turned on. When these services are turned off, it makes the Map and Ordering systems not as useful. We wanted a better way of communicating this to our users. We worked with marketing, product managers, engineers, and other designers to think through a simple onboarding flow to help guide users and enable these key device features.
     </p>
-
+    <p>
+      We also found problems with users creating and maintaining accounts. Many users will use Weedmaps in “incognito” mode on web browsers or delete the app from their phone after downloading. Due to some stigmas around cannabis, many don’t want an app called Weedmaps on their phone. So they download, complete their task, and delete it immediately. This means we’ve lost any log in information about that user, which means many users don’t log in.
+    </p>
+    <p>
+      Federated authentication and sign in would help us with this problem. We planned to add “Continue with Facebook” and “Continue with Google” buttons to make the sign in/create account process dead-simple.
+    </p>
   </div>
+</div>
+<div class="pageContent">
+  <figure class="four-row">
+    <img class="hasShadow" src="../images/onboarding/splash.png" />
+    <img class="hasShadow" src="../images/onboarding/value1.png" />
+    <img class="hasShadow" src="../images/onboarding/value2.png" />
+    <img class="hasShadow" src="../images/onboarding/value3.png" />
+  </figure>
+  <figcaption>
+    Some early wireframes for the new onboarding experience. It would start with some information panels that would autorotate and the federated sign in options.
+  </figcaption>
+</div>
+<div class="pageContent">
+  <figure class="four-row">
+    <img class="hasShadow" src="../images/onboarding/locationRequest_auth-with-FB-G.png" />
+    <img class="hasShadow" src="../images/onboarding/locationRequest_auth-with-FB-G_dialog.png" />
+    <img class="hasShadow" src="../images/onboarding/notificationRequest.png" />
+    <img class="hasShadow" src="../images/onboarding/notificationRequest_dialog.png" />
+  </figure>
+  <figcaption>
+    If the user signs in with Facebook or Google, we would grab a photo if available and use it in the rest of the onboarding flow.
+  </figcaption>
+</div>
+<div class="pageContent">
+  <figure class="four-row">
+    <img src="../images/onboarding/newlogin.png" />
+  </figure>
+  <figcaption>
+    Final visual design for the sign in experience.
+  </figcaption>
 </div>
