@@ -64,6 +64,7 @@
   }
   .about {
     grid-column-gap: $baseGrid*10;
+    grid-template-columns: 1fr;
   }
   .pageContent.pageText {
     grid-template-columns: 1fr;
@@ -74,6 +75,12 @@
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .about {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media only screen and (max-width: 680px) {
   header.home {
     grid-auto-flow: row;
@@ -81,6 +88,7 @@
   img.hasShadow {
     box-shadow: 0 0 $baseGrid*2 rgba(0,0,0,0.085), 0 $baseGrid*2 $baseGrid*3 rgba(0,0,0,0.085);
   }
+
 }
 
 
@@ -156,6 +164,17 @@
   .lead {
     font-size:$baseFontSize;
     line-height: $lineHeight;
+  }
+}
+
+@media only screen and (max-width: 591px) {
+  .links a {
+    display:block;
+  }
+
+  .links a + a {
+    margin-left: 0;
+    margin-top:$baseGrid*2;
   }
 }
 
