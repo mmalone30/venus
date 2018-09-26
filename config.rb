@@ -16,6 +16,11 @@ page '/*.txt', layout: false
 
 activate :livereload
 
+activate :blog do |blog|
+  blog.layout = "blog_layout"
+  blog.permalink = "blog/{title}.html"
+end
+
 activate :directory_indexes
 
 # With alternative layout

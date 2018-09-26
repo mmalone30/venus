@@ -236,3 +236,10 @@ li + li {
   font-weight: 300;
   line-height: $baseGrid*6;
 }
+
+code {
+  background:$lightPink;
+  font-family: monospace;
+  color:$textColor;
+  padding: 0 3px;
+}
